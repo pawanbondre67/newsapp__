@@ -1,5 +1,5 @@
-import { Dimensions, Image, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { Dimensions, Image, StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 import { NewsDataType } from '../../../types';
 type Props = {
     slideItem : NewsDataType;
@@ -10,16 +10,16 @@ type Props = {
 const {width} = Dimensions.get('screen');
 
 
-const SliderItem = ({slideItem,index}:Props) => {
+const SliderItem = ({slideItem}:Props) => {
   return (
     <View style={styles.slideWrapper}>
      <Image source={{uri: slideItem.image_url}} style={styles.image}  />
      <Text>{slideItem.title}</Text>
          </View>
-  )
-}
+  );
+};
 
-export default SliderItem
+export default SliderItem;
 
 const styles = StyleSheet.create({
     slideWrapper:{
@@ -39,5 +39,5 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         gap: 10,
         resizeMode : 'cover',
-    }
-})
+    },
+});

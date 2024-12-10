@@ -16,11 +16,11 @@ const Header = () => {
       </View>
 
      </View>
-      
+
       <TouchableOpacity onPress={()=>{}}>
       <Ionicons name="notifications-outline" size={24} color={Colors.black} />
       </TouchableOpacity>
-     
+
     </View>
   );
 };
@@ -54,5 +54,5 @@ const styles = StyleSheet.create({
     username:{
         fontSize: 18,
         color: Colors.black,
-    }
+    },
 });
